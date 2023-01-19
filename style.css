@@ -1,0 +1,173 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.sky {
+  height: 100vh;
+  width: 100%;
+  background-image: url('https://i.imgur.com/gNXpUHL.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.highway {
+  height: 200px;
+  width: 1000%;
+  display: block;
+  background-image: url('https://i.imgur.com/bVXQ8P5.jpg');
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-repeat: repeat;
+  animation-delay: 10s;
+}
+
+@keyframes highway {
+  100% {
+    transform: translateX(-3000px);
+  }
+}
+
+.city {
+  height: 250px;
+  width: 500%;
+  background-image: url('https://i.imgur.com/Q6bTT2k.png');
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 200px;
+  display: block;
+  z-index: 1;
+  background-repeat: repeat;
+  /* animation: city 20s linear infinite; */
+}
+
+@keyframes city {
+  100% {
+    transform: translateX(-1500px);
+  }
+}
+.car {
+  width: 100%;
+  bottom: 100px;
+  position: absolute;
+  z-index: 3;
+}
+.car img {
+  width: 18%;
+}
+@keyframes run{
+  0%{
+    left: 0% ; transform: translateY(-5px);
+  }
+  100%{
+    left:100%;     
+  }
+}
+.highway{
+  overflow: auto;
+}
+/* /////////////////////////////////////////////////////////////////////// */
+.vic1{
+  z-index: 12;
+  bottom: -45px;
+}
+.vic1 img{
+  padding-bottom: 35px;
+  width: 25%;
+  animation-name: run ;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  position: relative;
+}
+.vic2{
+  transform: rotateY(180deg);
+  float: left;
+  z-index: 11;
+  bottom: 30px;
+
+}
+.vic2 img{
+  width: 320px;
+  animation-name: run;
+  animation-duration: 2s;
+  animation-delay: 4s;
+  position: relative;
+  padding-right: -1500px;
+  
+}
+.vic3{
+  z-index: 10;
+  bottom: 72px;
+
+}
+.vic3 img{
+  width: 280px;
+  animation-name: run;
+  animation-duration: 2s;
+  animation-delay: 6s;
+  position: relative;
+}
+.vic4{
+  z-index: 9;
+  bottom: 100px;
+  transform: rotateY(180deg);
+}
+.vic4 img{
+  animation-name: run;
+  animation-duration: 2s;
+  animation-delay: 8s;
+  position: relative;
+}
+.vic5{
+  transform: rotateY(180deg);
+  z-index: 7;
+  bottom: 160px;
+
+
+}
+.vic5 img{
+  width: 200px;
+  animation-name: run;
+  animation-duration: 2s;
+  animation-delay: 12s;
+  position: relative;
+
+}
+.vic6{
+  padding-bottom: 30px;
+  z-index: 8;
+
+}
+.vic6 img{
+  animation-name: run;
+  animation-duration: 2s;
+  animation-delay: 10s;
+  position: relative;
+}
+.plan img{
+  height: 61px;
+  transform: rotate(16deg);
+  margin-top: 20px;
+  animation-name: fly;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: inherit;
+  position: absolute;
+}
+
+@keyframes fly{
+  0%{
+    left: 0;
+  }
+  100%{
+    left: 100%;
+  }
+}
+
