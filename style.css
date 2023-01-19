@@ -159,7 +159,7 @@
   animation-duration: 20s;
   animation-iteration-count: infinite;
   animation-timing-function: inherit;
-  position: absolute;
+  position: relative;
 }
 
 @keyframes fly{
@@ -170,4 +170,26 @@
     left: 100%;
   }
 }
+.train{
+  position: absolute;
+}
+.train img{
+  z-index: 6;
+  margin-top: 30%;
+  position: relative;
+  animation-iteration-count:infinite;
+  animation-name: fast;
+  animation-duration: .1s;
+  animation-delay: 5s;
+}
+
+@keyframes fast{
+  0%{
+   left: 0%;
+  }
+  100%{
+    left: 100%;
+  }
+}
+
 
