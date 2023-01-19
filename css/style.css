@@ -180,7 +180,7 @@
   animation-iteration-count:infinite;
   animation-name: fast;
   animation-duration: .1s;
-  animation-delay: 5s;
+  animation-delay: 10s;
 }
 
 @keyframes fast{
