@@ -175,12 +175,13 @@
 }
 .train img{
   z-index: 6;
-  margin-top: 30%;
+  margin-top: 32%;
   position: relative;
   animation-iteration-count:infinite;
   animation-name: fast;
   animation-duration: .1s;
   animation-delay: 10s;
+  margin-left: -15px;
 }
 
 @keyframes fast{
