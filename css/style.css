@@ -27,13 +27,6 @@
   background-repeat: repeat;
   animation-delay: 10s;
 }
-
-@keyframes highway {
-  100% {
-    transform: translateX(-3000px);
-  }
-}
-
 .city {
   height: 250px;
   width: 500%;
@@ -47,12 +40,6 @@
   background-repeat: repeat;
   /* animation: city 20s linear infinite; */
 }
-
-@keyframes city {
-  100% {
-    transform: translateX(-1500px);
-  }
-}
 .car {
   width: 100%;
   bottom: 100px;
@@ -61,14 +48,6 @@
 }
 .car img {
   width: 18%;
-}
-@keyframes run{
-  0%{
-    left: 0% ; transform: translateY(-5px);
-  }
-  100%{
-    left:100%;     
-  }
 }
 .highway{
   overflow: auto;
@@ -161,15 +140,6 @@
   animation-timing-function: inherit;
   position: relative;
 }
-
-@keyframes fly{
-  0%{
-    left: 0;
-  }
-  100%{
-    left: 100%;
-  }
-}
 .train{
   background-image: url("../images/train.png");
   height: 200px;
@@ -186,13 +156,40 @@
   animation-duration: .1s;
   animation-delay: 10s;
 }
+@keyframes highway {
+  100% {
+    transform: translateX(-3000px);
+  }
+}
 
+@keyframes city {
+  100% {
+    transform: translateX(-1500px);
+  }
+}
+
+@keyframes fly{
+  0%{
+    left: 0;
+  }
+  100%{
+    left: 100%;
+  }
+}
 @keyframes fast{
   0%{
    left: 0%;
   }
   100%{
     left: 100%;
+  }
+}
+@keyframes run{
+  0%{
+    left: 0% ; transform: translateY(-5px);
+  }
+  100%{
+    left:100%;     
   }
 }
 
